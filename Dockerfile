@@ -1,5 +1,5 @@
 # Sử dụng image Tomcat
-FROM tomcat:9.0-jdk17
+FROM tomcat:10.0-jdk17
 
 # Xóa các ứng dụng mặc định của Tomcat (tùy chọn)
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
