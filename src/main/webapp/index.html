@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fill Out Information</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    </head>
+    <body>
+        <img src="img/images.png" alt="MurachEmail"/>
+        <h1>Survey</h1>
+        <p>If you have a moment,we'd appreciate it if you would fill out this
+        survey</p>
+        <h2>Your information:</h2>
+        <form action="emailList" method="post">
+            <input type="hidden" name="action" value="add"><!-- comment -->
+            <label>First Name:</label>
+            <input type="text" name="firstName" required><br>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" required> <br>
+            <label>Email:</label>
+            <input type="email" name="email" required> <br>
+            <label>Date of birth:</label>
+            <input type="date" name="birthDate" required><br>
+            
+            <h2>How did you hear about us</h2>
+            <div>
+                <input type="radio" name="hear" value="Serach engine">Serach engine
+                <input type="radio" name="hear" value="Word of mouth">Word of mouth
+                <input type="radio" name="hear" value="Social media">Social media
+                <input type="radio" name="hear" value="Other">Other
+            </div>
+            <br>
+  <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+<input type="checkbox" name="receive" value="no"> Yes, I'd like that <br>
+<input type="checkbox" name="receive" value="like"> YES, please send me email announcements <br>
+
+            <br>
+            <label class="classes">Please contact me by:</label>
+            <select name="contact">
+                <option value="email_postal" >Email or Postal</option>
+                <option value="email">Email only</option>
+                <option value="postal">Postal only</option>
+            </select>
+            <br>
+            <input  type="submit" value="Join Now" id="submit">
+        </form>
+    </body>
+</html>

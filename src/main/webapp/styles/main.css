@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 4, 2024, 8:13:43 PM
+    Author     : DELL
+*/
+/* The styles for the elements */
+body {
+font-family: Arial, Helvetica,sans-serif;
+font-size: 85%;
+margin-left: 2em;
+margin-right: 2em;
+width: 800px;
+
+}
+h1,h2{
+    color:teal;
+    
+}
+label{
+    float:left;
+    width:6em;
+    margin-bottom:0.5em;
+    font-weight: bold;
+}
+br{
+    clear: both;
+}
+
+input[type="text"], input[type="email"]{
+    width:15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+span {
+    width: 200em;
+    margin-left: 5em;
+    margin-bottom: 0.5em;
+}
+.classes{
+    float:left;
+    width:11em;
+    margin-bottom:0.5em;
+    font-weight: bold;
+}
