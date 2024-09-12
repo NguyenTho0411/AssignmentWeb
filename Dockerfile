@@ -1,26 +1,14 @@
-# Sử dụng image Maven để build project
-FROM maven:3.8.6-openjdk-17 AS build
+# Sử dụng image Tomcat
+FROM tomcat:9.0-jdk17
 
-# Đặt thư mục làm việc trong container
-WORKDIR /app
+# Xóa các ứng dụng mặc định của Tomcat (tùy chọn)
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
-# Copy toàn bộ project vào container
-COPY . .
+# Sao chép file .war vào thư mục webapps
+COPY target/MurachEmailList-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/MurachEmailList.war
 
-# Build ứng dụng
-RUN mvn clean package
+# Expose port
+EXPOSE 8080
 
-# Sử dụng image OpenJDK để chạy ứng dụng
-FROM openjdk:17-jdk-slim
-
-# Đặt thư mục làm việc
-WORKDIR /app
-
-# Copy file .war hoặc .jar từ giai đoạn build
-COPY --from=build /app/target/your-app.war /app/your-app.war
-
-# Thiết lập biến môi trường PORT
-ENV PORT=8080
-
-# Lệnh chạy ứng dụng, đảm bảo sử dụng cổng từ biến PORT
-CMD ["java", "-jar", "/app/your-app.war"]
+# Lệnh khởi động Tomcat
+CMD ["catalina.sh", "run"]
