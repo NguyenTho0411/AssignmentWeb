@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <title>Murach's Java Servlet and JSP</title>
+        <title>22110237-Nguyễn Hữu Đức Thọ</title>
         <link rel="stylesheet" href="styles/main.css" type="text/css"/>
     </head>
     <body>
@@ -31,6 +31,12 @@
         <span>${receive}</span> <br>
         <label class="classes">Contact Option:</label>
         <span>${contact}</span> <br>
+        <p> To enter another imformation,click on the <b>Back button</b> in your browser or
+            the <b>Return button</b> shown below</p>
+        <form action="" method="get">
+            <input type="hidden" name="action" value="join"><!-- comment -->
+            <input type="submit" value="Return">
+        </form>
     </form>
 </body>
 </html>

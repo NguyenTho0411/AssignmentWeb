@@ -8,40 +8,47 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 */
 /* The styles for the elements */
 body {
-font-family: Arial, Helvetica,sans-serif;
-font-size: 85%;
-margin-left: 2em;
-margin-right: 2em;
-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85%;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 800px;
+}
+h1,
+h2 {
+  color: teal;
+}
+label {
+  float: left;
+  width: 6em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+br {
+  clear: both;
+}
 
-}
-h1,h2{
-    color:teal;
-    
-}
-label{
-    float:left;
-    width:6em;
-    margin-bottom:0.5em;
-    font-weight: bold;
-}
-br{
-    clear: both;
-}
-
-input[type="text"], input[type="email"]{
-    width:15em;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
+input[type="text"],
+input[type="email"] {
+  width: 15em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
 }
 span {
-    width: 200em;
-    margin-left: 5em;
-    margin-bottom: 0.5em;
+  width: 200em;
+  margin-left: 5em;
+  margin-bottom: 0.5em;
 }
-.classes{
-    float:left;
-    width:11em;
-    margin-bottom:0.5em;
-    font-weight: bold;
+.classes {
+  float: left;
+  width: 11em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#formaction {
+  background-color: rgb(183, 219, 250); /* Màu nền của biểu mẫu */
+  padding: 20px; /* Khoảng cách bên trong biểu mẫu */
+  border-radius: 8px; /* Bo tròn góc biểu mẫu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng để làm nổi bật */
 }
